@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Server 1</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    <img src="https://media.discordapp.net/attachments/887847623455834164/917530272872956028/02abf350090bd63b.png" alt="Vue logo">
+    <h1>\{{ greeting }}</h1>
+    <ul>
+      <li>
+어플 다운로드를 위한 서버 입니다
+        </a>
+      </li>
+      <li>
+        혹시 도움이 필요하다면 스튜디오 K 디스코드
+        <a :href="discordURL" target="_blank">
+          the Discord chat
+        </a>
+      </li>
+      <li>
+        다운로드는 아래를 클릭하세요
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        greeting: 'Download Server 1',
+        docsURL: 'http://vuejs.org/guide/',
+        discordURL: 'https://discord.gg/9gRJ6x6tZ8',
+        forumURL: 'http://forum.vuejs.org/'
+      },
+      methods: {
+        humanizeURL: function (url) {
+          return url
+            .replace(/^https?:\/\//, '')
+            .replace(/\/$/, '')
+        }
+      }
+    })
+  </script>
+<a href="학교정보시스템V2.apk" download>다운로드 하려면 이 글자를 클릭하세요</a>
+</body>
+</html>
